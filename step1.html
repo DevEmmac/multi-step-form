@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <link rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Sidebar start -->
+        <div class="sidebar-container">
+            <div class="steps">
+                    <a href=""><h2>1</h2></a>
+                <div class="step-box">
+                    <p>Step 1<br><span>Your info</span></p>
+                </div>
+            </div>
+        
+            <div class="steps">
+                <a href="step2.html"><h2>2</h2></a>
+                <div class="step-box">
+                   <p>Step 2<br><span>Select plan</span></p>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <a href="step3.html"><h2>3</h2></a>
+                <div class="step-box">
+                    <p>Step 3<br><span>Add-ons</span></p>
+                </div>
+            </div>
+            
+            <div class="steps">
+                <a href="step4.html"><h2>4</h2></a>
+                <div class="step-box">
+                    <p>Step 4<br><span>Summary</span></p>
+                </div>
+            </div>
+            
+        </div>
+       <!-- Sidebar end -->
+
+        <!-- Step 1 start -->
+            <form id="form" action="">
+                <div class="details">
+                    <h1>Personal info</h1>
+                    <p>Please provide your name, email address, and phone number.</p>
+                </div>
+                
+                <div class="form-group">
+                    <div class="text">
+                        <h4>Name</h4>
+                        <div class="error-massage"></div>
+                    </div>
+                    <label for="name">
+                      <input type="text" id="name" name="name" placeholder="e.g. Stephen King" minlength="3" maxlength="100">
+                   </label>
+                </div>
+                
+                <div class="form-group">
+                    <div class="text">
+                        <h4>Email Address</h4>
+                        <div class="error-massage"></div>
+                    </div>
+                    <label for="email">
+                        <input type="email" id="email" name="email" placeholder="e.g. stephenking@lorem.com">  
+                    </label>
+                </div>
+
+                <div class="form-group">
+                    <div class="text">
+                        <h4>Phone Number</h4>
+                        <div class="error-massage"></div>
+                    </div>
+                    <label for="phone">
+                       <input type="tel" id="phone" name="phone" placeholder="e.g. +1 234 567 890" pattern="[+][0-9]{1}-[0-9]{3}-[0-9]{3}-[0-9]{3}">
+                    </label>
+                </div>
+
+                <button type="submit">
+                    <a href="step2.html"><p>Next Step</p></a>
+                </button>
+                <!-- <input type="submit" onclick="myfunction()"> -->
+            </form>
+       <!-- Step 1 end -->
+   </div>
+   <script src="data.js"></script>
+</body>
+</html>
